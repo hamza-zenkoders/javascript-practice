@@ -82,9 +82,23 @@ const fruits5 = fruits.map(fruit => fruit.toUpperCase());
 fruits.unshift('Kiwi');
 
 // 2. Remove Mango from the array.
-const fruits6 = fruits.filter(fruit => fruit.toLowerCase() !== 'mango');
+fruits.splice(fruits.indexOf('Mango'), 1);
 
 // 3. Sort the remaining fruits alphabetically.
-fruits6.sort();
+fruits.sort();
+
+console.log(fruits);
+
+
+// Bonus Questions
+// Flatten a nested array [1, [2, 3], [4, [5, 6]]] using flat. 
+const arr = [1, [2, 3], [4, [5, 6]]];
+
+const flatArr = arr.flat(2);
+console.log(flatArr);
+
+
+// Use join to create a string from the fruits array with items separated by a hyphen (-).
+const fruits6 = fruits.join('-');
 
 console.log(fruits6);
