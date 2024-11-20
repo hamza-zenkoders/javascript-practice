@@ -45,3 +45,15 @@ console.log(setA.intersection(setB));
 
 // Find the difference between setA and setB (values in setA but not in setB). 
 console.log(setA.difference(setB));
+
+
+// Use a Set to remove duplicate values from the array [1, 2, 2, 3, 4, 4, 5]. 
+const uniqueArr = [...new Set([1, 2, 2, 3, 4, 4, 5])];
+
+
+// Write a function getUniqueCharacters that takes a string and returns a Set of unique characters.
+function getUniqueCharacters(str) {
+    return (new Set(str));
+}
+
+console.log(getUniqueCharacters('aabcc'));
